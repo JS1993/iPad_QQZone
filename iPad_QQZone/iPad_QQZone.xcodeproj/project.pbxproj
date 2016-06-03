@@ -14,6 +14,7 @@
 		CF61A7D91D01A7CE00CFE8C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF61A7D81D01A7CE00CFE8C0 /* Assets.xcassets */; };
 		CF61A7E71D01A7CE00CFE8C0 /* iPad_QQZoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61A7E61D01A7CE00CFE8C0 /* iPad_QQZoneTests.m */; };
 		CF61A7F21D01A7CE00CFE8C0 /* iPad_QQZoneUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61A7F11D01A7CE00CFE8C0 /* iPad_QQZoneUITests.m */; };
+		CF61A8011D01AB0400CFE8C0 /* UIImageView+JSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61A8001D01AB0400CFE8C0 /* UIImageView+JSExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		CF61A7ED1D01A7CE00CFE8C0 /* iPad_QQZoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iPad_QQZoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF61A7F11D01A7CE00CFE8C0 /* iPad_QQZoneUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iPad_QQZoneUITests.m; sourceTree = "<group>"; };
 		CF61A7F31D01A7CE00CFE8C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF61A7FF1D01AB0400CFE8C0 /* UIImageView+JSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JSExtension.h"; sourceTree = "<group>"; };
+		CF61A8001D01AB0400CFE8C0 /* UIImageView+JSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JSExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 				CF61A7D21D01A7CE00CFE8C0 /* ViewController.h */,
 				CF61A7D31D01A7CE00CFE8C0 /* ViewController.m */,
 				CF61A7D51D01A7CE00CFE8C0 /* Main.storyboard */,
+				CF61A7FF1D01AB0400CFE8C0 /* UIImageView+JSExtension.h */,
+				CF61A8001D01AB0400CFE8C0 /* UIImageView+JSExtension.m */,
 				CF61A7D81D01A7CE00CFE8C0 /* Assets.xcassets */,
 				CF61A7DD1D01A7CE00CFE8C0 /* Info.plist */,
 				CF61A7CC1D01A7CE00CFE8C0 /* Supporting Files */,
@@ -270,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF61A7D41D01A7CE00CFE8C0 /* ViewController.m in Sources */,
+				CF61A8011D01AB0400CFE8C0 /* UIImageView+JSExtension.m in Sources */,
 				CF61A7D11D01A7CE00CFE8C0 /* AppDelegate.m in Sources */,
 				CF61A7CE1D01A7CE00CFE8C0 /* main.m in Sources */,
 			);
