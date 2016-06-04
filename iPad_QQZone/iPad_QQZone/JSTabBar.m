@@ -9,6 +9,13 @@
 #import "JSTabBar.h"
 #import "JSConst.h"
 #import "UIView+JSViewExtension.m"
+#import "JSTabBarBtn.h"
+
+@interface JSTabBar()
+
+@property(nonatomic,strong)JSTabBarBtn* selectedBtn;
+
+@end
 
 @implementation JSTabBar
 
@@ -28,15 +35,15 @@
 
 -(void)setBtnWithtTitle:(NSString*)title andImage:(NSString*)image{
     
-    UIButton* btn=[UIButton buttonWithType:UIButtonTypeCustom];
+    JSTabBarBtn* btn=[JSTabBarBtn buttonWithType:UIButtonTypeCustom];
     
     [btn setImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
     
-    [btn setBackgroundImage:[UIImage imageNamed:@"tabbar_separate_selected_bg"] forState:UIControlStateHighlighted];
+    [btn setBackgroundImage:[UIImage imageNamed:@"tabbar_separate_selected_bg"] forState:UIControlStateSelected];
     
     [btn setTitle:title forState:UIControlStateNormal];
     
-    [btn addTarget:self action:@selector(tabBarBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [btn addTarget:self action:@selector(tabBarBtnClicked:) forControlEvents:UIControlEventTouchDown];
     
     [self addSubview:btn];
     
@@ -53,17 +60,26 @@
     
     for (NSInteger i=0; i<count; i++) {
         
-        UIButton* btn=self.subviews[i];
+        JSTabBarBtn* btn=self.subviews[i];
         btn.height=kDockItemHeight;
         btn.width=self.width;
         btn.x=0;
         btn.y=i*kDockItemHeight;
         
+        [btn didRotationToLandScape:isLandScape];
+        
     }
 }
 
--(void)tabBarBtnClicked:(UIButton*)btn{
+-(void)tabBarBtnClicked:(JSTabBarBtn*)btn{
     
+    
+    //保存按钮点击状态三部曲
+    self.selectedBtn.selected=NO;
+    
+    self.selectedBtn=btn;
+    
+    self.selectedBtn.selected=YES;
     
 }
 @end
