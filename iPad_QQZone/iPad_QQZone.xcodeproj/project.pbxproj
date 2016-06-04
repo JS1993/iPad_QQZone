@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CF19ACD71D025B9F00634E1A /* UIImage+JSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CF19ACD61D025B9F00634E1A /* UIImage+JSExtension.m */; };
 		CF19ACDA1D025BCF00634E1A /* UIView+JSViewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CF19ACD91D025BCF00634E1A /* UIView+JSViewExtension.m */; };
+		CF19ACDD1D025F0C00634E1A /* JSConst.m in Sources */ = {isa = PBXBuildFile; fileRef = CF19ACDC1D025F0C00634E1A /* JSConst.m */; };
 		CF61A7CE1D01A7CE00CFE8C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61A7CD1D01A7CE00CFE8C0 /* main.m */; };
 		CF61A7D11D01A7CE00CFE8C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61A7D01D01A7CE00CFE8C0 /* AppDelegate.m */; };
 		CF61A7D41D01A7CE00CFE8C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61A7D31D01A7CE00CFE8C0 /* ViewController.m */; };
@@ -40,6 +41,8 @@
 		CF19ACD61D025B9F00634E1A /* UIImage+JSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JSExtension.m"; sourceTree = "<group>"; };
 		CF19ACD81D025BCF00634E1A /* UIView+JSViewExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JSViewExtension.h"; sourceTree = "<group>"; };
 		CF19ACD91D025BCF00634E1A /* UIView+JSViewExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JSViewExtension.m"; sourceTree = "<group>"; };
+		CF19ACDB1D025F0C00634E1A /* JSConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSConst.h; sourceTree = "<group>"; };
+		CF19ACDC1D025F0C00634E1A /* JSConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSConst.m; sourceTree = "<group>"; };
 		CF61A7C91D01A7CE00CFE8C0 /* iPad_QQZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPad_QQZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF61A7CD1D01A7CE00CFE8C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CF61A7CF1D01A7CE00CFE8C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -114,6 +117,8 @@
 				CF19ACD61D025B9F00634E1A /* UIImage+JSExtension.m */,
 				CF19ACD81D025BCF00634E1A /* UIView+JSViewExtension.h */,
 				CF19ACD91D025BCF00634E1A /* UIView+JSViewExtension.m */,
+				CF19ACDB1D025F0C00634E1A /* JSConst.h */,
+				CF19ACDC1D025F0C00634E1A /* JSConst.m */,
 				CF61A7D81D01A7CE00CFE8C0 /* Assets.xcassets */,
 				CF61A7DD1D01A7CE00CFE8C0 /* Info.plist */,
 				CF61A7CC1D01A7CE00CFE8C0 /* Supporting Files */,
@@ -281,6 +286,7 @@
 			files = (
 				CF19ACDA1D025BCF00634E1A /* UIView+JSViewExtension.m in Sources */,
 				CF61A7D41D01A7CE00CFE8C0 /* ViewController.m in Sources */,
+				CF19ACDD1D025F0C00634E1A /* JSConst.m in Sources */,
 				CF61A7D11D01A7CE00CFE8C0 /* AppDelegate.m in Sources */,
 				CF61A7CE1D01A7CE00CFE8C0 /* main.m in Sources */,
 				CF19ACD71D025B9F00634E1A /* UIImage+JSExtension.m in Sources */,

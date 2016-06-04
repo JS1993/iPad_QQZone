@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "UIImageView+JSExtension.h"
+
 
 @interface ViewController ()
 
