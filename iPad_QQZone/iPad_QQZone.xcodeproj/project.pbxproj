@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF19ACD71D025B9F00634E1A /* UIImage+JSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CF19ACD61D025B9F00634E1A /* UIImage+JSExtension.m */; };
+		CF19ACDA1D025BCF00634E1A /* UIView+JSViewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CF19ACD91D025BCF00634E1A /* UIView+JSViewExtension.m */; };
 		CF61A7CE1D01A7CE00CFE8C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61A7CD1D01A7CE00CFE8C0 /* main.m */; };
 		CF61A7D11D01A7CE00CFE8C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61A7D01D01A7CE00CFE8C0 /* AppDelegate.m */; };
 		CF61A7D41D01A7CE00CFE8C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61A7D31D01A7CE00CFE8C0 /* ViewController.m */; };
@@ -14,7 +16,6 @@
 		CF61A7D91D01A7CE00CFE8C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF61A7D81D01A7CE00CFE8C0 /* Assets.xcassets */; };
 		CF61A7E71D01A7CE00CFE8C0 /* iPad_QQZoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61A7E61D01A7CE00CFE8C0 /* iPad_QQZoneTests.m */; };
 		CF61A7F21D01A7CE00CFE8C0 /* iPad_QQZoneUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61A7F11D01A7CE00CFE8C0 /* iPad_QQZoneUITests.m */; };
-		CF61A8011D01AB0400CFE8C0 /* UIImageView+JSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61A8001D01AB0400CFE8C0 /* UIImageView+JSExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF19ACD51D025B9F00634E1A /* UIImage+JSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JSExtension.h"; sourceTree = "<group>"; };
+		CF19ACD61D025B9F00634E1A /* UIImage+JSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JSExtension.m"; sourceTree = "<group>"; };
+		CF19ACD81D025BCF00634E1A /* UIView+JSViewExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JSViewExtension.h"; sourceTree = "<group>"; };
+		CF19ACD91D025BCF00634E1A /* UIView+JSViewExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JSViewExtension.m"; sourceTree = "<group>"; };
 		CF61A7C91D01A7CE00CFE8C0 /* iPad_QQZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPad_QQZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF61A7CD1D01A7CE00CFE8C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CF61A7CF1D01A7CE00CFE8C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -50,8 +55,6 @@
 		CF61A7ED1D01A7CE00CFE8C0 /* iPad_QQZoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iPad_QQZoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF61A7F11D01A7CE00CFE8C0 /* iPad_QQZoneUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iPad_QQZoneUITests.m; sourceTree = "<group>"; };
 		CF61A7F31D01A7CE00CFE8C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CF61A7FF1D01AB0400CFE8C0 /* UIImageView+JSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JSExtension.h"; sourceTree = "<group>"; };
-		CF61A8001D01AB0400CFE8C0 /* UIImageView+JSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JSExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +110,10 @@
 				CF61A7D21D01A7CE00CFE8C0 /* ViewController.h */,
 				CF61A7D31D01A7CE00CFE8C0 /* ViewController.m */,
 				CF61A7D51D01A7CE00CFE8C0 /* Main.storyboard */,
-				CF61A7FF1D01AB0400CFE8C0 /* UIImageView+JSExtension.h */,
-				CF61A8001D01AB0400CFE8C0 /* UIImageView+JSExtension.m */,
+				CF19ACD51D025B9F00634E1A /* UIImage+JSExtension.h */,
+				CF19ACD61D025B9F00634E1A /* UIImage+JSExtension.m */,
+				CF19ACD81D025BCF00634E1A /* UIView+JSViewExtension.h */,
+				CF19ACD91D025BCF00634E1A /* UIView+JSViewExtension.m */,
 				CF61A7D81D01A7CE00CFE8C0 /* Assets.xcassets */,
 				CF61A7DD1D01A7CE00CFE8C0 /* Info.plist */,
 				CF61A7CC1D01A7CE00CFE8C0 /* Supporting Files */,
@@ -274,10 +279,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF19ACDA1D025BCF00634E1A /* UIView+JSViewExtension.m in Sources */,
 				CF61A7D41D01A7CE00CFE8C0 /* ViewController.m in Sources */,
-				CF61A8011D01AB0400CFE8C0 /* UIImageView+JSExtension.m in Sources */,
 				CF61A7D11D01A7CE00CFE8C0 /* AppDelegate.m in Sources */,
 				CF61A7CE1D01A7CE00CFE8C0 /* main.m in Sources */,
+				CF19ACD71D025B9F00634E1A /* UIImage+JSExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +339,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -378,6 +385,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -497,6 +505,7 @@
 				CF61A7F81D01A7CE00CFE8C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF61A7F91D01A7CE00CFE8C0 /* Build configuration list for PBXNativeTarget "iPad_QQZoneTests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +514,7 @@
 				CF61A7FB1D01A7CE00CFE8C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF61A7FC1D01A7CE00CFE8C0 /* Build configuration list for PBXNativeTarget "iPad_QQZoneUITests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +523,7 @@
 				CF61A7FE1D01A7CE00CFE8C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
