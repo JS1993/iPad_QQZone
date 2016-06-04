@@ -10,6 +10,9 @@
 		CF19ACD71D025B9F00634E1A /* UIImage+JSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CF19ACD61D025B9F00634E1A /* UIImage+JSExtension.m */; };
 		CF19ACDA1D025BCF00634E1A /* UIView+JSViewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CF19ACD91D025BCF00634E1A /* UIView+JSViewExtension.m */; };
 		CF19ACDD1D025F0C00634E1A /* JSConst.m in Sources */ = {isa = PBXBuildFile; fileRef = CF19ACDC1D025F0C00634E1A /* JSConst.m */; };
+		CF19ACE51D02601600634E1A /* JSDock.m in Sources */ = {isa = PBXBuildFile; fileRef = CF19ACE41D02601600634E1A /* JSDock.m */; };
+		CF19ACE81D02659C00634E1A /* JSBottomMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = CF19ACE71D02659C00634E1A /* JSBottomMenu.m */; };
+		CF19ACEB1D026D0300634E1A /* JSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CF19ACEA1D026D0300634E1A /* JSTabBar.m */; };
 		CF61A7CE1D01A7CE00CFE8C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61A7CD1D01A7CE00CFE8C0 /* main.m */; };
 		CF61A7D11D01A7CE00CFE8C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61A7D01D01A7CE00CFE8C0 /* AppDelegate.m */; };
 		CF61A7D41D01A7CE00CFE8C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61A7D31D01A7CE00CFE8C0 /* ViewController.m */; };
@@ -43,6 +46,12 @@
 		CF19ACD91D025BCF00634E1A /* UIView+JSViewExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JSViewExtension.m"; sourceTree = "<group>"; };
 		CF19ACDB1D025F0C00634E1A /* JSConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSConst.h; sourceTree = "<group>"; };
 		CF19ACDC1D025F0C00634E1A /* JSConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSConst.m; sourceTree = "<group>"; };
+		CF19ACE31D02601600634E1A /* JSDock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDock.h; sourceTree = "<group>"; };
+		CF19ACE41D02601600634E1A /* JSDock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDock.m; sourceTree = "<group>"; };
+		CF19ACE61D02659C00634E1A /* JSBottomMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBottomMenu.h; sourceTree = "<group>"; };
+		CF19ACE71D02659C00634E1A /* JSBottomMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBottomMenu.m; sourceTree = "<group>"; };
+		CF19ACE91D026D0300634E1A /* JSTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTabBar.h; sourceTree = "<group>"; };
+		CF19ACEA1D026D0300634E1A /* JSTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTabBar.m; sourceTree = "<group>"; };
 		CF61A7C91D01A7CE00CFE8C0 /* iPad_QQZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPad_QQZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF61A7CD1D01A7CE00CFE8C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CF61A7CF1D01A7CE00CFE8C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -85,6 +94,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF19ACDE1D025F9800634E1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CF19ACDF1D025FA100634E1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF19ACE31D02601600634E1A /* JSDock.h */,
+				CF19ACE41D02601600634E1A /* JSDock.m */,
+				CF19ACE61D02659C00634E1A /* JSBottomMenu.h */,
+				CF19ACE71D02659C00634E1A /* JSBottomMenu.m */,
+				CF19ACE91D026D0300634E1A /* JSTabBar.h */,
+				CF19ACEA1D026D0300634E1A /* JSTabBar.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CF19ACE01D025FAC00634E1A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF61A7D21D01A7CE00CFE8C0 /* ViewController.h */,
+				CF61A7D31D01A7CE00CFE8C0 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CF19ACE11D025FB800634E1A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				CF19ACD51D025B9F00634E1A /* UIImage+JSExtension.h */,
+				CF19ACD61D025B9F00634E1A /* UIImage+JSExtension.m */,
+				CF19ACD81D025BCF00634E1A /* UIView+JSViewExtension.h */,
+				CF19ACD91D025BCF00634E1A /* UIView+JSViewExtension.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		CF19ACE21D025FF600634E1A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				CF19ACDB1D025F0C00634E1A /* JSConst.h */,
+				CF19ACDC1D025F0C00634E1A /* JSConst.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
 		CF61A7C01D01A7CE00CFE8C0 = {
 			isa = PBXGroup;
 			children = (
@@ -108,19 +166,11 @@
 		CF61A7CB1D01A7CE00CFE8C0 /* iPad_QQZone */ = {
 			isa = PBXGroup;
 			children = (
-				CF61A7CF1D01A7CE00CFE8C0 /* AppDelegate.h */,
-				CF61A7D01D01A7CE00CFE8C0 /* AppDelegate.m */,
-				CF61A7D21D01A7CE00CFE8C0 /* ViewController.h */,
-				CF61A7D31D01A7CE00CFE8C0 /* ViewController.m */,
-				CF61A7D51D01A7CE00CFE8C0 /* Main.storyboard */,
-				CF19ACD51D025B9F00634E1A /* UIImage+JSExtension.h */,
-				CF19ACD61D025B9F00634E1A /* UIImage+JSExtension.m */,
-				CF19ACD81D025BCF00634E1A /* UIView+JSViewExtension.h */,
-				CF19ACD91D025BCF00634E1A /* UIView+JSViewExtension.m */,
-				CF19ACDB1D025F0C00634E1A /* JSConst.h */,
-				CF19ACDC1D025F0C00634E1A /* JSConst.m */,
-				CF61A7D81D01A7CE00CFE8C0 /* Assets.xcassets */,
-				CF61A7DD1D01A7CE00CFE8C0 /* Info.plist */,
+				CF19ACDE1D025F9800634E1A /* Model */,
+				CF19ACDF1D025FA100634E1A /* View */,
+				CF19ACE01D025FAC00634E1A /* Controller */,
+				CF19ACE11D025FB800634E1A /* Category */,
+				CF19ACE21D025FF600634E1A /* Other */,
 				CF61A7CC1D01A7CE00CFE8C0 /* Supporting Files */,
 			);
 			path = iPad_QQZone;
@@ -129,6 +179,11 @@
 		CF61A7CC1D01A7CE00CFE8C0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CF61A7D81D01A7CE00CFE8C0 /* Assets.xcassets */,
+				CF61A7DD1D01A7CE00CFE8C0 /* Info.plist */,
+				CF61A7CF1D01A7CE00CFE8C0 /* AppDelegate.h */,
+				CF61A7D01D01A7CE00CFE8C0 /* AppDelegate.m */,
+				CF61A7D51D01A7CE00CFE8C0 /* Main.storyboard */,
 				CF61A7CD1D01A7CE00CFE8C0 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -284,12 +339,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF19ACEB1D026D0300634E1A /* JSTabBar.m in Sources */,
+				CF19ACE81D02659C00634E1A /* JSBottomMenu.m in Sources */,
 				CF19ACDA1D025BCF00634E1A /* UIView+JSViewExtension.m in Sources */,
 				CF61A7D41D01A7CE00CFE8C0 /* ViewController.m in Sources */,
 				CF19ACDD1D025F0C00634E1A /* JSConst.m in Sources */,
 				CF61A7D11D01A7CE00CFE8C0 /* AppDelegate.m in Sources */,
 				CF61A7CE1D01A7CE00CFE8C0 /* main.m in Sources */,
 				CF19ACD71D025B9F00634E1A /* UIImage+JSExtension.m in Sources */,
+				CF19ACE51D02601600634E1A /* JSDock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

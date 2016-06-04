@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 extern const CGFloat kLandscapeWidth;
+extern const CGFloat kLandscapeHeight;
 extern const CGFloat kDockLandscapeWidth;
 extern const CGFloat kDockPortraitWidth;
 
