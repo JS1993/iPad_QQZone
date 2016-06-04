@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+@class JSIconBtn;
+
+
 @interface JSIconBtn : UIButton
 
 -(void)didRotationToLandScape:(BOOL)isLandScape;

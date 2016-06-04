@@ -8,9 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
+@class JSTabBar;
+@class JSTabBarBtn;
+
+@protocol JSTarBarMenuDelegate <NSObject>
+
+@optional
+
+-(void)tabBarBtnDidClicked:(JSTabBar*)tabBar andClickBtn:(JSTabBarBtn*)btn;
+
+@end
+
 @interface JSTabBar : UIView
 
 
 -(void)didRotationToLandScape:(BOOL)isLandScape;
+
+@property(nonatomic,strong)id<JSTarBarMenuDelegate> delegate;
 
 @end

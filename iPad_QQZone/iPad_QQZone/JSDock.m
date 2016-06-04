@@ -9,17 +9,9 @@
 #import "JSDock.h"
 #import "UIView+JSViewExtension.h"
 #import "JSConst.h"
-#import "JSBottomMenu.h"
-#import "JSTabBar.h"
-#import "JSIconBtn.h"
+
 
 @interface JSDock()
-
-@property(nonatomic,strong)JSBottomMenu* bottomMenu;
-
-@property(nonatomic,strong)JSTabBar* tabBar;
-
-@property(nonatomic,strong)JSIconBtn* iconBtn;
 
 @end
 
@@ -62,7 +54,8 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        
+        self.backgroundColor=[UIColor darkGrayColor];
+        self.autoresizingMask=UIViewAutoresizingFlexibleHeight;
     }
     return self;
 }
@@ -83,5 +76,6 @@
     [self.iconBtn didRotationToLandScape:isLandScape];
     
 }
+
 
 @end

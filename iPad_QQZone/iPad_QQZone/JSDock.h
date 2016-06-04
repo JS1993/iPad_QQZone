@@ -7,8 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JSBottomMenu.h"
+#import "JSTabBar.h"
+#import "JSIconBtn.h"
 
 @interface JSDock : UIView
+
+@property(nonatomic,strong)JSBottomMenu* bottomMenu;
+
+@property(nonatomic,strong)JSTabBar* tabBar;
+
+@property(nonatomic,strong)JSIconBtn* iconBtn;
 
 -(void)didRotationToLandScape:(BOOL)isLandScape;
 

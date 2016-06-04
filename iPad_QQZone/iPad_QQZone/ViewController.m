@@ -10,9 +10,12 @@
 #import "JSDock.h"
 #import "JSConst.h"
 #import "UIView+JSViewExtension.h"
+#import "JSBottomMenu.h"
+#import "JSTabBar.h"
+#import "JSIconBtn.h"
 
 
-@interface ViewController ()
+@interface ViewController ()<JSTarBarMenuDelegate,JSBottomMenuDelegate>
 
 @property(nonatomic,strong)JSDock* dock;
 
@@ -29,9 +32,10 @@
         _dock.x=0;
         _dock.y=0;
         _dock.height=self.view.height;
-        _dock.autoresizingMask=UIViewAutoresizingFlexibleHeight;
         BOOL isLandScape=self.view.width==kLandscapeWidth;
-        _dock.backgroundColor=[UIColor darkGrayColor];
+        _dock.tabBar.delegate=self;
+        _dock.bottomMenu.delegate=self;
+        [_dock.iconBtn addTarget:self action:@selector(iconBtnClicked) forControlEvents:UIControlEventTouchUpInside];
         [_dock  didRotationToLandScape:isLandScape];
         
         [self.view addSubview:_dock];
@@ -44,6 +48,24 @@
     [super viewDidLoad];
     
     [self dock];
+}
+
+#pragma mark-头像按钮的点击事件
+
+-(void)iconBtnClicked{
+    
+}
+
+#pragma mark-tabbBarDelegate
+
+-(void)tabBarBtnDidClicked:(JSTabBar *)tabBar andClickBtn:(JSTabBarBtn *)btn{
+    
+}
+
+#pragma mark-bottomMenuDelegate
+
+-(void)bottomMenuBtnDidClicked:(JSBottomMenu *)bottoMenu andClickBtn:(UIButton *)btn{
+    
 }
 
 //监听屏幕尺寸改变

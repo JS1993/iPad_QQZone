@@ -73,6 +73,9 @@
 
 -(void)tabBarBtnClicked:(JSTabBarBtn*)btn{
     
+    if ([self.delegate respondsToSelector:@selector(tabBarBtnDidClicked:andClickBtn:)]) {
+        [self.delegate tabBarBtnDidClicked:self andClickBtn:btn];
+    }
     
     //保存按钮点击状态三部曲
     self.selectedBtn.selected=NO;

@@ -82,6 +82,10 @@
 
 -(void)bottomBtnClicked:(UIButton*)btn{
     
+    if ([self.delegate respondsToSelector:@selector(bottomMenuBtnDidClicked:andClickBtn:)]) {
+        [self.delegate bottomMenuBtnDidClicked:self andClickBtn:btn];
+    }
+    
 }
 
 @end

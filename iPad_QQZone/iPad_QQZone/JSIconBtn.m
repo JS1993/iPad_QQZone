@@ -59,4 +59,6 @@
     self.titleLabel.x=self.islandScape?0:-1;
     self.titleLabel.y=self.islandScape?CGRectGetMaxY(self.imageView.frame):-1;
 }
+
+
 @end
