@@ -13,6 +13,7 @@
 #import "JSBottomMenu.h"
 #import "JSTabBar.h"
 #import "JSIconBtn.h"
+#import "JSMoodViewController.h"
 
 
 @interface ViewController ()<JSTarBarMenuDelegate,JSBottomMenuDelegate>
@@ -65,7 +66,33 @@
 #pragma mark-bottomMenuDelegate
 
 -(void)bottomMenuBtnDidClicked:(JSBottomMenu *)bottoMenu andClickBtn:(UIButton *)btn{
-    
+    switch (btn.tag) {
+        case kBottomMenuItemTypeMood:
+        {
+            JSMoodViewController* moodVC=[[JSMoodViewController alloc]init];
+            UINavigationController* nav=[[UINavigationController alloc]initWithRootViewController:moodVC];
+            
+            nav.modalPresentationStyle=UIModalPresentationFormSheet;
+            nav.modalTransitionStyle=UIModalTransitionStyleFlipHorizontal;
+            
+            [self presentViewController:nav animated:YES completion:nil];
+            
+        }
+            break;
+        case kBottomMenuItemTypePhoto:
+        {
+            
+        }
+            break;
+        case kBottomMenuItemTypeBlog:
+        {
+            
+        }
+            
+            break;
+        default:
+            break;
+    }
 }
 
 //监听屏幕尺寸改变
