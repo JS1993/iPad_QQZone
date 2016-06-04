@@ -10,4 +10,7 @@
 
 @interface JSTabBar : UIView
 
+
+-(void)didRotationToLandScape:(BOOL)isLandScape;
+
 @end

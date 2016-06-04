@@ -10,14 +10,28 @@
 #import "UIView+JSViewExtension.h"
 #import "JSConst.h"
 #import "JSBottomMenu.h"
+#import "JSTabBar.h"
 
 @interface JSDock()
 
 @property(nonatomic,strong)JSBottomMenu* bottomMenu;
 
+@property(nonatomic,strong)JSTabBar* tabBar;
+
 @end
 
 @implementation JSDock
+
+
+/*tabBar懒加载*/
+-(JSTabBar *)tabBar
+{
+    if (_tabBar==nil) {
+        _tabBar=[[JSTabBar alloc]init];
+        [self addSubview:_tabBar];
+    }
+    return _tabBar;
+}
 
 
 /*底部菜单懒加载*/
@@ -45,6 +59,14 @@
     self.width=isLandScape?kDockLandscapeWidth:kDockPortraitWidth;
     
     [self.bottomMenu didRotationToLandScape:isLandScape];
+    
+    [self.tabBar didRotationToLandScape:isLandScape];
+    
+    CGFloat screenHeight=isLandScape?kLandscapeHeight:kLandscapeWidth;
+    
+    self.tabBar.y = screenHeight - self.tabBar.height-self.bottomMenu.height;
+    
+    NSLog(@"%f %f %f",screenHeight,self.tabBar.height,self.bottomMenu.height);
     
 }
 
