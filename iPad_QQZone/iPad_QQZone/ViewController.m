@@ -30,12 +30,9 @@
         _dock.y=0;
         _dock.height=self.view.height;
         _dock.autoresizingMask=UIViewAutoresizingFlexibleHeight;
-        
         BOOL isLandScape=self.view.width==kLandscapeWidth;
-        
+        _dock.backgroundColor=[UIColor darkGrayColor];
         [_dock  didRotationToLandScape:isLandScape];
-        
-        _dock.backgroundColor=[UIColor redColor];
         
         [self.view addSubview:_dock];
     }

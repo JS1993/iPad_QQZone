@@ -11,6 +11,7 @@
 #import "JSConst.h"
 #import "JSBottomMenu.h"
 #import "JSTabBar.h"
+#import "JSIconBtn.h"
 
 @interface JSDock()
 
@@ -18,9 +19,22 @@
 
 @property(nonatomic,strong)JSTabBar* tabBar;
 
+@property(nonatomic,strong)JSIconBtn* iconBtn;
+
 @end
 
 @implementation JSDock
+
+
+/*头像按钮懒加载*/
+-(JSIconBtn *)iconBtn
+{
+    if (_iconBtn==nil) {
+        _iconBtn=[[JSIconBtn alloc]init];
+        [self addSubview:_iconBtn];
+    }
+    return _iconBtn;
+}
 
 
 /*tabBar懒加载*/
@@ -66,7 +80,7 @@
     
     self.tabBar.y = screenHeight - self.tabBar.height-self.bottomMenu.height;
     
-    NSLog(@"%f %f %f",screenHeight,self.tabBar.height,self.bottomMenu.height);
+    [self.iconBtn didRotationToLandScape:isLandScape];
     
 }
 
