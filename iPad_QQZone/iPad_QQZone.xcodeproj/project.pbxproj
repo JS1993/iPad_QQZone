@@ -16,6 +16,7 @@
 		CF19ACEE1D0271E400634E1A /* JSTabBarBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = CF19ACED1D0271E400634E1A /* JSTabBarBtn.m */; };
 		CF19ACF11D0275EE00634E1A /* JSIconBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = CF19ACF01D0275EE00634E1A /* JSIconBtn.m */; };
 		CF19ACF41D027F6600634E1A /* JSMoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF19ACF31D027F6600634E1A /* JSMoodViewController.m */; };
+		CF19ACF71D0283E500634E1A /* AllStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF19ACF61D0283E500634E1A /* AllStatusViewController.m */; };
 		CF61A7CE1D01A7CE00CFE8C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61A7CD1D01A7CE00CFE8C0 /* main.m */; };
 		CF61A7D11D01A7CE00CFE8C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61A7D01D01A7CE00CFE8C0 /* AppDelegate.m */; };
 		CF61A7D41D01A7CE00CFE8C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61A7D31D01A7CE00CFE8C0 /* ViewController.m */; };
@@ -61,6 +62,8 @@
 		CF19ACF01D0275EE00634E1A /* JSIconBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSIconBtn.m; sourceTree = "<group>"; };
 		CF19ACF21D027F6600634E1A /* JSMoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMoodViewController.h; sourceTree = "<group>"; };
 		CF19ACF31D027F6600634E1A /* JSMoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMoodViewController.m; sourceTree = "<group>"; };
+		CF19ACF51D0283E500634E1A /* AllStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllStatusViewController.h; sourceTree = "<group>"; };
+		CF19ACF61D0283E500634E1A /* AllStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllStatusViewController.m; sourceTree = "<group>"; };
 		CF61A7C91D01A7CE00CFE8C0 /* iPad_QQZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPad_QQZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF61A7CD1D01A7CE00CFE8C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CF61A7CF1D01A7CE00CFE8C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -134,6 +137,8 @@
 				CF61A7D31D01A7CE00CFE8C0 /* ViewController.m */,
 				CF19ACF21D027F6600634E1A /* JSMoodViewController.h */,
 				CF19ACF31D027F6600634E1A /* JSMoodViewController.m */,
+				CF19ACF51D0283E500634E1A /* AllStatusViewController.h */,
+				CF19ACF61D0283E500634E1A /* AllStatusViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -354,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF19ACF71D0283E500634E1A /* AllStatusViewController.m in Sources */,
 				CF19ACEB1D026D0300634E1A /* JSTabBar.m in Sources */,
 				CF19ACEE1D0271E400634E1A /* JSTabBarBtn.m in Sources */,
 				CF19ACE81D02659C00634E1A /* JSBottomMenu.m in Sources */,

@@ -14,15 +14,36 @@
 #import "JSTabBar.h"
 #import "JSIconBtn.h"
 #import "JSMoodViewController.h"
+#import "AllStatusViewController.h"
 
 
 @interface ViewController ()<JSTarBarMenuDelegate,JSBottomMenuDelegate>
 
 @property(nonatomic,strong)JSDock* dock;
 
+@property(nonatomic,strong)UIView* contentView;
+
+@property(nonatomic,assign)NSInteger currentIndex;
+
 @end
 
 @implementation ViewController
+
+
+/*辅助容器视图懒加载*/
+-(UIView *)contentView
+{
+    if (_contentView==nil) {
+        _contentView=[[UIView alloc]init];
+        _contentView.width = kContentViewWidth;
+        _contentView.height = self.view.height - 20;
+        _contentView.x = self.dock.width;
+        _contentView.y = 20;
+        _contentView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+        [self.view addSubview:_contentView];
+    }
+    return _contentView;
+}
 
 
 /*dock的懒加载*/
@@ -49,18 +70,71 @@
     [super viewDidLoad];
     
     [self dock];
+    
+    AllStatusViewController *vc1 = [[AllStatusViewController alloc] init];
+    [self packNav:vc1];
+    
+    UIViewController *vc2 = [[UIViewController alloc] init];
+    vc2.view.backgroundColor = [UIColor blackColor];
+    vc2.title=@"与我相关";
+    [self packNav:vc2];
+    
+    UIViewController *vc3 = [[UIViewController alloc] init];
+    vc3.view.backgroundColor = [UIColor purpleColor];
+    vc3.title=@"照片墙";
+    [self packNav:vc3];
+    
+    UIViewController *vc4 = [[UIViewController alloc] init];
+    vc4.view.backgroundColor = [UIColor orangeColor];
+    vc4.title=@"电子相框";
+    [self packNav:vc4];
+    
+    UIViewController *vc5 = [[UIViewController alloc] init];
+    vc5.view.backgroundColor = [UIColor yellowColor];
+    vc5.title=@"好友";
+    [self packNav:vc5];
+    
+    UIViewController *vc6 = [[UIViewController alloc] init];
+    vc6.view.backgroundColor = [UIColor greenColor];
+    vc6.title=@"更多";
+    [self packNav:vc6];
+    
+    UIViewController *vc7 = [[UIViewController alloc] init];
+    vc7.title = @"个人中心";
+    vc7.view.backgroundColor = [UIColor lightGrayColor];
+    [self packNav:vc7];
+}
+
+/**
+ *  抽出一个包装导航控制器的方法,并且将他加入到我们的ChildViewControllers里面
+ */
+- (void)packNav:(UIViewController *)vc
+{
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    [self addChildViewController:nav];
+}
+
+#pragma mark-tabbBarDelegate
+
+-(void)tabBarBtnDidClicked:(JSTabBar *)tabBar fromIndex:(NSInteger)from toIndex:(NSInteger)to{
+    
+    UIViewController* oldVC=self.childViewControllers[from];
+    [oldVC.view removeFromSuperview];
+    
+    UIViewController* newVC=self.childViewControllers[to];
+    newVC.view.frame=self.contentView.bounds;
+    [self.contentView addSubview:newVC.view];
+    
+    self.currentIndex=to;
 }
 
 #pragma mark-头像按钮的点击事件
 
 -(void)iconBtnClicked{
     
-}
-
-#pragma mark-tabbBarDelegate
-
--(void)tabBarBtnDidClicked:(JSTabBar *)tabBar andClickBtn:(JSTabBarBtn *)btn{
+    [self tabBarBtnDidClicked:nil fromIndex:self.currentIndex toIndex:self.childViewControllers.count-1];
     
+    [self.dock.tabBar unSelected];
 }
 
 #pragma mark-bottomMenuDelegate
@@ -103,6 +177,8 @@
     [UIView animateWithDuration:[coordinator transitionDuration] animations:^{
         
         [self.dock didRotationToLandScape:isLandScape];
+        
+         self.contentView.x = self.dock.width;
         
     }];
 }

@@ -43,6 +43,9 @@
     
     [btn setTitle:title forState:UIControlStateNormal];
     
+    //绑定tag
+    btn.tag=self.subviews.count;
+    
     [btn addTarget:self action:@selector(tabBarBtnClicked:) forControlEvents:UIControlEventTouchDown];
     
     [self addSubview:btn];
@@ -73,8 +76,11 @@
 
 -(void)tabBarBtnClicked:(JSTabBarBtn*)btn{
     
-    if ([self.delegate respondsToSelector:@selector(tabBarBtnDidClicked:andClickBtn:)]) {
-        [self.delegate tabBarBtnDidClicked:self andClickBtn:btn];
+    if ([self.delegate respondsToSelector:@selector(tabBarBtnDidClicked:fromIndex:toIndex:)]) {
+        
+        [self.delegate tabBarBtnDidClicked:self fromIndex:self.selectedBtn.tag toIndex:btn.tag];
+        
+        NSLog(@"%zd",btn.tag);
     }
     
     //保存按钮点击状态三部曲
@@ -84,5 +90,9 @@
     
     self.selectedBtn.selected=YES;
     
+}
+
+-(void)unSelected{
+    self.selectedBtn.selected=NO;
 }
 @end

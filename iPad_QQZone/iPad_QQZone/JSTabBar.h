@@ -15,7 +15,7 @@
 
 @optional
 
--(void)tabBarBtnDidClicked:(JSTabBar*)tabBar andClickBtn:(JSTabBarBtn*)btn;
+-(void)tabBarBtnDidClicked:(JSTabBar*)tabBar fromIndex:(NSInteger)from toIndex:(NSInteger)to;
 
 @end
 
@@ -25,5 +25,8 @@
 -(void)didRotationToLandScape:(BOOL)isLandScape;
 
 @property(nonatomic,strong)id<JSTarBarMenuDelegate> delegate;
+
+// 让SelectItem变成不选中
+- (void)unSelected;
 
 @end
